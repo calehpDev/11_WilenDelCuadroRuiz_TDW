@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-6">
+  <h1 class="text-3xl font-bold text-gray-800">Galería de Productos</h1>
+  <a href="{{ url_for('productos.nuevo_producto') }}" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition shadow">
+    + Subir Nueva Imagen
+  </a>
+</div>
+
+<div class="bg-white p-6 rounded-lg shadow-md">
+  <p class="text-gray-600">Haz clic en el botón superior para cargar y optimizar un nuevo archivo con Python y JavaScript.</p>
+</div>
+{% endblock %}
